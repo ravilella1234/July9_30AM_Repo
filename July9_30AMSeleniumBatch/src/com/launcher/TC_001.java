@@ -6,7 +6,6 @@ public class TC_001 extends BaseTest {
 		try {
 			init();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		launch("firefoxbrowser");
