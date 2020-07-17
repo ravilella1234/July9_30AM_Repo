@@ -12,14 +12,31 @@ public class BaseTest
 {
 	
 	public static WebDriver driver;
-	public static String path="D:\\AprilWorkSpace\\July9_30AMSeleniumBatch\\data.properties";
+	
+	public static String projectPath=System.getProperty("user.dir");
+	public static FileInputStream fis;
 	public static Properties p;
+	public static Properties mainProperty;
+	public static Properties childProperty;
 	
 	public static void init() throws Exception
 	{
-		FileInputStream fis = new FileInputStream(path);
+		fis = new FileInputStream(projectPath + "//data.properties");
 		p = new Properties();
 		p.load(fis);
+		
+		
+		fis = new FileInputStream(projectPath + "//environment.properties");
+		mainProperty = new Properties();
+		mainProperty.load(fis);
+		System.out.println(mainProperty.getProperty("env"));
+		String e = mainProperty.getProperty("env");
+		
+		
+		fis = new FileInputStream(projectPath + "//"+e+".properties");
+		childProperty = new Properties();
+		childProperty.load(fis);
+		System.out.println(childProperty.getProperty("amazonurl"));
 		
 	}
 	
@@ -39,7 +56,8 @@ public class BaseTest
 	
 	public static void navigateUrl(String url)
 	{
-		driver.get(p.getProperty(url));
+		//driver.get(childProperty.getProperty(url));
+		driver.navigate().to(childProperty.getProperty(url));
 	}
 
 }
