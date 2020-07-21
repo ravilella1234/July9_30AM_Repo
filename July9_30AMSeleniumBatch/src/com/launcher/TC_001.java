@@ -3,11 +3,13 @@ package com.launcher;
 public class TC_001 extends BaseTest
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws Exception 
 	{
-		launch("firefox");
+		init();
 		
-		navigateUrl("https://www.amazon.in");
+		launch("firefoxbrowser");
+		
+		navigateUrl("axisurl");
 
 	}
 
