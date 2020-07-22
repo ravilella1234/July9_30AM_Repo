@@ -1,0 +1,121 @@
+Advantages of CSS over xPath are:
+---------------------------------
+
+1) Css Selector will not change browser to browser as xpath will change.
+
+2) CSS is native to browsers and xPath is not
+
+3) xPath engines are different in each browser,hence make them inconsistent
+
+
+By using below methods we are identify the elements uniquely.
+
+1) TagName
+2) Id (#)
+3) ClassName (.)
+4) Attributes
+5) Contains (*)
+6) Starts-with (^)
+7) Ends with ($)
+8) Direct Childs  or Sub-Child Elements
+9) Next Sibling
+10) PSEUDO-CLASSES -  FIRST-CHILD, LAST-CHILD, NTH-CHILD(), NTH-LAST-CHILD()
+
+
+1) TagName:
+   ---------
+   Using tag name we can identify the element. But it will locate so many elements on the web page. as page may have same tags in many places,So it will not locate the element uniquely.This is not a good practice to use the tag name individually to locate the element.
+
+
+2) ID:
+   ---
+Id is an attribute to the element or tag to describe what kind of element that is.Id's are unique. If you want to use ID as locator then need to use '#' symbol in front of ID.
+
+syntax:  tagName#IDValue  (or)  #IDValue  (or) tagName[Attribute='value']
+
+
+3) Class Name:
+   -----------
+Class is also an attribute to the element to apply the styles to that tag/element.Class names are not unique.So,if use these it locate so many elements which are using the same class.If you want to locate an element using class name use any other attributes as extra parameters to identify the element uniquely.
+If you want to use Class NAme as locator then need to use '.' symbol in front of class Name
+
+syntax:  tagName.className   (or)  .className  (or)  tagName[Attribute='value']
+
+
+
+
+4) Multiple Attributes:
+   --------------------
+We can use multiple attributes to identify the element.
+
+syntax:    tagName[attribute1='attributeValue1'][attribute2='attributeValue2']
+
+
+5) Contains:
+   ---------
+We can use contains method to identify the element.Need to use  '*' symbol to identify the element.
+
+syntax  :  tagName[attribute*='partialAttributeValue']
+
+
+6) Starts With:
+   ------------
+We can use starts with method to identify the element .Need to use '^' (cap)symbol to identify the element.
+
+syntax:
+-------
+tagName[attribute^='attributeStartingValue']
+
+
+7) Ends With:
+   ----------
+
+We can use ends with method to identify the element.Need to use '$' symbol to identify the element.
+
+syntax:
+-------
+tagName[attribute$='attributeEndingValue']
+
+
+
+8) Direct Childs  or Sub-Child Elements
+   ------------------------------------
+
+Direct Child :
+    1) Child Combinator(>) is used to select direct child
+       syntax : tagName[AttributeName='AttributeValue'] > tagName[AttributeName='AttributeValue']
+
+    2) Descendant combinator () is used to select child or SubChild
+       syntax : tagName[AttributeName='AttributeValue']  tagName[AttributeName='AttributeValue']
+
+
+
+9) Next Sibling
+   ------------
+
+Sibling  elements are located using the  + operator
+Adjacent sibling combinator(+) separates two CSS selectors and matches the second webelement only if it immidiately follows the first webelement, and both are the child of the same parent webelement
+
+    syntax : tagName[AttributeName='AttributeValue']+tagName[AttributeName='AttributeValue']
+
+
+
+10) PSEUDO-CLASSES - FIRST-CHILD, LAST-CHILD, NTH-CHILD, NTH-LAST-CHILD
+    -------------------------------------------------------------------
+
+    A CSS pseudo class is a  keyword added a selector that specifies a special state of the                selected webelement.
+
+
+    . first-child    -> Returns first element from the group of sibling elements.
+
+    . last-child     -> Returns last element from the group of sibling elements.
+
+    . nth-child()    -> Returns elements based on their position in a group of                                                 siblings.
+
+    . nth-last-child()  -> Returns elements based on their posotion among a group of                                              siblings, counting from the end.
+
+
+
+
+
+

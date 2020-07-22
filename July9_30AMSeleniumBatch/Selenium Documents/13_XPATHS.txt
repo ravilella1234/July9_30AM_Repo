@@ -1,0 +1,144 @@
+Xpaths  --> 2 types
+
+1. Absolute Xpath  -- starts with "HTML" Tag
+2. Relative Xpath  -- starts with "//"
+
+By using below methods we can identify the elements uniquely.
+
+1) Single Attribute
+2) Multiple Attributes
+3) Parent Child Relationship
+4) Text()
+5) Starts-With() 
+6) Contains()
+7) self
+8) parent         
+9) Child
+10) Decendant Node
+11) Ancestor Node
+12) Following Node
+13) Preceding Node
+
+
+
+1) Single attribute :
+   ------------------
+   
+    syntax : //tagname[@attribute1='value1']
+
+
+
+2) Multiple Attribute :
+   --------------------
+ 
+  syntax:
+         //tagname[@attribute1='value1'][@attribute2='value2']
+	//tagname[@attribute1='value1' and @attribute2='value2']
+	//tagname[@attribute1='value1' or @attribute2='value2']
+	(//tagname[@attribute1='value1'])[1]
+
+
+3) Parent Child Relationship :
+   ---------------------------
+
+   syntax :
+           //parenttagname[@parentattributename='value']/childtagname[@childattributename='value']
+
+   //a[@id='gb23']/span[1]
+
+
+
+***********************************************************************************
+				Xpath functions
+***********************************************************************************
+
+
+4) text()  ---> To locate links & labels ,function name is text()
+   ------
+
+    //tagname[text()='text value']
+
+
+5) starts-with() 
+   -------------
+
+    //tagname[starts-with(@attributename,'starting value')]
+    //tagname[starts-with(text(),'starting value')]
+
+6) contains()   
+   ----------
+     
+   //tagname[contains(@attributename,'partial value')]
+   //tagname[contains(text(),'partial value')]
+
+
+ last()
+   //input[@id='b'][last()]
+   //input[@id='b'][last()-1]
+
+
+ position() --->  To locate element based on location we use this function
+   //input[@id='b'][position()=2]
+
+
+
+7) Self : Which Selects the current node
+
+    syntax ://tagname[@Attribute='Value']//self::tagname
+
+
+
+8) Parent :  Selects the parent of the context (current) node
+
+    syntax ://tagname[@Attribute='Value']//parent::tagname
+
+
+
+9) Child :  Selects all children of the current node
+
+    syntax ://tagname[@Attribute='Value']//child::tagname
+
+
+
+10) Descendant :  Selects all descendants (children, grandchildren,                  etc..) of the current (or) context node
+   
+
+    syntax:  //tagname[@Attribute='Value']//descedant::tagname
+             //tagname[@Attribute='Value']//descedant-or-self::tagname
+
+            
+
+
+11) Ancestor :   Selects all ancestors (parent,grandparent, etc) of the current node
+
+
+    syntax : //tagname[@Attribute='Value']//ancestor::tagname
+	    //tagname[@Attribute='Value']//ancestor-or-self::tagname
+
+
+
+12)  Following :  Selects everything in the document after the closing tag of the curent node.
+     -----------
+
+     syntax : //tagname[@Attribute='Value']//following::tagname
+              //tagname[@Attribute='Value']//following-sibling::tagname
+
+
+
+13) Preceding :  Selects all nodes that appear before the current node
+   ----------- 
+
+   syntax : //tagname[@Attribute='Value']//preceding::tagname
+            //tagname[@Attribute='Value']//preceding-sibling::tagname
+
+
+
+***********************************************************************************
+              			Xpath Operators
+***********************************************************************************
+
+1. And
+2. OR
+
+
+

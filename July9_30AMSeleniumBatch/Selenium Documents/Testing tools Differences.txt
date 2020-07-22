@@ -1,0 +1,79 @@
+Selenium
+________
+1. It is a open source ,free to use,an free of charge
+2. Can run tests across different browsers
+3. It Supports various OS(windows,MAC,LINUX)
+4. It supports many programming languages(java,c-sharp, ruby,python)
+5. Selenium is cross platform Tool
+6. It supports serial & parallel execution(by testng F/W)
+7. Will supports to work with web application only
+8. Test scripts can be developed in various IDE's like (Eclipse, Visual studio, Netbeams, intelliJ)
+
+
+mercury(mercury) ---> QTP(hp) --->  UFT(micro focus)
+
+QTP/UFT(micro focus)
+--------------------
+1. Its  a commercial(seat,concreat)
+2. Can only run tests in IE Browser (chrome,FF)
+3. It can be used in windows & unix
+4. It supports VB & java scripting
+5. QTP is not cross platform Tool
+6. Can execute in parllel but using QC,ALM which is again paid.
+7. It supports for Web & windows based
+8. Test scripts can be developed only in QTP editors
+
+
+
+------------------------------------------------------------------------
+
+What is Automation Testing?
+---------------------------
+Automation testing is the process of testing the software using an automation tool to find the defects. In this process executing the test scripts and generating the results are performed automatically by automation tools. Some most popular tools to do automation testing are QTP/UFT, Selenium WebDriver etc….
+
+
+
+Why do we prefer Selenium Automation tool?
+------------------------------------------
+1)  Free & open source
+2)  Have large user base & helping communities
+3)  Cross browser compatibility
+4)  Platform compatibility
+5)  Multiple programming languages support
+
+
+What are the benefits of Automation Testing?
+--------------------------------------------
+1. Saves time & money. Automation testing is faster in execution.
+
+2. Reusability of code. Create one time & execute multiple times with less or no maintenance.
+
+3. Easy reporting. It generates automatic reports after test execution.
+
+4. Easy for compatibility testing. It enables parallel execution in the       combination of different OS & browser environments.
+
+5. Low-cost maintenance. It is cheaper compared to manual testing in a long run.
+
+6. Automated testing is more reliable.
+
+7. Automated testing is more powerful & versatile.
+
+8. It is mostly used for regression testing. Supports execution of            repeated test cases.
+
+9. Minimal manual intervention. Test scripts can be run unattended.
+
+10. Maximum coverage. It helps to increase the test coverage.
+
+
+Using Selenium type of testing can be done are:
+-----------------------------------------------
+Functional Testing
+Regression Testing
+Sanity Testing
+Smoke Testing
+Responsive Testing
+Cross Browser Testing
+UI testing (black box)
+Integration Testing
+
+

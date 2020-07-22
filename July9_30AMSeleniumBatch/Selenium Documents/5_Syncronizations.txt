@@ -1,0 +1,42 @@
+********************************************************************************************
+				Syncronization
+********************************************************************************************
+
+Tool ---> Constant
+
+Application --->  Internet
+  	    --->  System Configuration
+ 	    --->  WebServer performance
+
+
+
+1. Thread.sleep(time);  ---> Millseconds, If u are unable to work with implicit/Explicit waits then only we use this.
+   Thread.Sleep(5000);
+
+
+
+2. Implicit Wait  ---> Can provide Sync to entire Script
+
+     Syntax  : driver.manage().timeouts().implicitlyWait(long time, TimeUnit units);
+
+     Example : driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+
+
+
+3. Explicit Wait  ---> Can provide sync to Single or particular Element
+
+     Syntax  : WebDriverWait wait=new WedDriverWait(driver_object ,time) ---> time should always be in Seconds
+               wait.until(ExpectedConditions.<cond>)
+
+     Example : WebDriverWait wait=new WebDriverWait(driver,120);
+	       wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Selenium - Web Browser Automation")));
+
+
+Note : To Handle Ajax Controls we go for Explicit Wait
+
+
+
+
+
+
+

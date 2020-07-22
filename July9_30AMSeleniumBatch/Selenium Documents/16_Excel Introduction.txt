@@ -1,0 +1,47 @@
+Jars 
+----
+jxl   ---> .xls
+apache poi  --->  poi, poi-ooxml, poi-ooxml-schemas   (.xls & .xlsx)
+
+reference Link : http://poi.apache.org/components/spreadsheet/quick-guide.html
+
+1. What is Excel
+2. Why to use Excel
+3. Important classes
+4. Important methods
+5. Important points to remember
+6. Sample programs
+
+Below are the classes will use to read  & to write the data
+------------------------------------------------------------
+FileInputStream
+FileOutputStream
+
+XSSFWorkbook/HSSFWorkbook
+XSSFSheet/HSSFSheet
+XSSFRow/HSSFRow
+XSSFCell/HSSFCell
+
+Below are the methods will use to read the data which are available in the above class
+-------------------------------------------------------------------------------------------------------------
+
+1. getSheet("sheet Name")  -- Get sheet with the given name
+2. getLastCellNum() -- Get the indexof the last cell contained in the row plus one as index starts from zero
+3. getRow(int)  -- Return the row
+4. getCell(int) -- Get the cell representing a given column
+5. getStringCellValue() -- Get the value of the cell as a string
+6. getNumericCellValue() -- Get the value of the cell as a numeric
+7. getDateCellValue() --  Get the value of the cell as a date
+8. getBooleanCellValue() --- Get the value of the cell as boolean
+
+sample programs How to read & write data from excel using Column Number
+---------------------------------------------------------------------------------------
+1. Standalone program
+2. Using utility class/method(for framework use)
+
+sample programs How to read & write data from excel using Column Name
+---------------------------------------------------------------------------------------
+1. Standalone program
+2. Using utility class/method(for framework use)
+
+

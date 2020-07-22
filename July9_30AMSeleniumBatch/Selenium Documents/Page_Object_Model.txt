@@ -1,0 +1,33 @@
+Selenium Page Object Model Aproach
+-------------------------------------
+
+Using Normal Approach
+---------------------
+
+--> POM is just a design pattern not a framework
+--> As the name says we will be working as pages (Page will be the pure Java classes)
+--> Based on application behaviour we will be creating seperate pages & will store all the locator & respective methods to use them
+
+Advantages of using POM
+-----------------------
+
+--> Script will be more readable format
+--> Using POM you will be able to achieve below three features
+        1. Easy to Maintain
+	2. Readable format
+	3. Reusable Scripts
+
+
+1. How to creae Maven Project?
+2. Follow the Framework Structure
+3. How to configure Drivers into Framework
+4. Use of apache Log4j
+5. Apache POI for excel reading
+6. Properties file reading
+7. Reusable functions
+8. Page Factory Approach
+9. Listener Interface
+10. Retry Mechanism
+11. Custom HTML report
+12. Extent Report
+13. Running Test Through Jenkins

@@ -1,0 +1,77 @@
+******************************************************************************************************************
+				1. Capturing ScreenShots
+				2. Capturing ScreenShots on Failure
+******************************************************************************************************************
+
+
+1. Capturing Screenshots:
+   ---------------------
+
+	It is very basic required thing in  automation tools to capture screenshot on testcase failure or whenever required during test case execution.
+
+WebDriver has provided us one interface "TakesScreenshot" for capturing the screenshot of webapplication and This 
+interface provides one method names as "getScreenshotAs()" to capture screenshot in instance of driver. This 
+"getScreenshotAs()" method takes argument of type "OutputType.File" or "OutputType.BASE64" or "OutputType.BYTES"
+So that it could return captured screenshot in filetype,or Base64 String type or in Raw Bytes.
+
+
+For File Type:
+--------------
+
+	File scrnshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+
+For Base64:
+-----------
+
+	File scrnshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
+
+
+For BYTES:
+----------
+
+	File scrnshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+
+
+We have taken the screenshot with the help of getScreenshotAS() method and its time to copy this file somewhere in our 
+file system or in our desktop.So for this purpose we further use copyFile() method of the FileUtils class from the 
+org.apache.commons.io.FileUtils class.
+
+
+
+
+Placing file in filesystem by using this below line
+
+
+	FileUtils.copyFile(scrnshot ,new File("d:\home_page.png"));
+        FileHandler.copy(scrnshot ,new File("d:\home_page.jpeg"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

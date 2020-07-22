@@ -1,0 +1,62 @@
+**********************************************************************************************************
+					Handling Alerts 
+					Handling Confirmations
+**********************************************************************************************************
+
+
+1. Handling Alerts:
+   ---------------
+
+Selenium can Handle java script alerts in a very effective manner but it cannot handle modal alert box which gets created by OS itself.
+
+
+What is Alert ?
+
+ 1. An Alert box is often used if you want to make sure information comes through comes through to the user.
+ 2. When an alert box pops up,the user will have to click "OK" to proceed.
+
+
+Note: To Handle alerts, First we need to switch the control to alert.
+
+
+Syntax:
+-------
+
+Alert al=driver.switchTo().alert();
+
+al.getText();  ---> It returns alert text
+al.accept();   ---> It click on "OK"
+al.dismiss();
+
+
+2. Handling Confirmation:
+   ---------------------
+
+What is confirmation ?
+
+  1. A confirm box is often used if you want the user to verify or accept something.
+  2. When a confirm box pops up,the user will have to click either "OK" or "Cancel" to proceed.
+
+
+Note: To handle alerts,First we need to switch the control to alert.
+
+
+Syntax: 
+------
+
+Alert al=driver.switchTo().alert();
+
+al.getText();  ---> Return alert text
+al.accept();   ---> Click on "OK"
+al.dismiss();  ---> Click on "Cancel"
+
+
+
+
+
+
+
+
+
+
+

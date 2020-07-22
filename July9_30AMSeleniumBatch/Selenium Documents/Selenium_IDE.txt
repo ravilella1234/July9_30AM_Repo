@@ -1,0 +1,113 @@
+Selenium IDE
+------------
+IDE stands for itegrated development envirronment.This the record & play back tool of selenium,which works on FF browser.
+
+Installing IDE
+--------------
+1. Launch FF
+2. Open seleniumhq.org
+3. Click on downloads
+4. Go to "selenium IDE" part & download the latest version. IDE is    gets installed as an addon under tools menu.
+5. IDE contains 2 sections (Table, Source)
+    1. Table is divided into 3 parts (Command,Target,Value)
+ 
+        command contains the list of selenese commands that were              generated during recording,
+       
+        Target sepecifies were these are executed ,
+       
+        Value specifies with what data the commands are executed.
+
+    2. The Source section contains the HTML code generated during recording.This HTML code can be converted
+       into other languages through the other navigations
+       Click on Options --> Click on Options  --> Check "Enable expermental features" --> click on OK
+       Click on Options  --> Click on format --> convert it to which ever language you required
+
+Note: IDE program cannot be executed when it is present in other languages.It will run only in HTML
+
+Advantages of IDE
+------------------
+1. No programming knowledge
+2. Code can be converted into multiple languages
+
+
+Disadvantages of IDE
+--------------------
+1. Recording can be done only on FF
+2. Cannot perform data driven Testing(there is no such concept of parametarization)
+3. It supports only linear testing framework
+
+
+
+orangehrm
+
+Selenium Commands
+-----------------
+
+1. Open - This is used to navigate to a URL. A forward slash in target area represents th e base URL
+2. Click - on  a link,image,button,radiobutton,checkbox etc..... It accepts one argument.
+            The location where it has to click.
+3. clickAndWait - This will click on element & wait for next page to load.By default it waits for 30 sec
+4. type - This used to enter the text into i/p fields.It accepts 2 arguments
+           a. The location where it has to enter
+	   b. Data to be entered
+5. select -  This used to select an option from the dropdown.It accets 2 arguments
+	   a. Name of the dropdown
+	   b. Option to be selected from the dropdown
+
+Verifications & Assertions
+--------------------------
+
+Verification commands are used to check if element is present in page or not.If element is present
+it will gives us passed status & continue.If the element is not present it will give a failed status.
+But still continue the execution of program
+  Ex: verifyText
+      verifyElementPresent
+
+Assertions commands on the other hand are also used to check if an element is present or not.but they 
+stops the execution of a program if the element not found.
+  Ex: assertText
+      asertAlert
+
+Default waiting time of selenium IDE is 30 sec.This can be modify using following navigations
+We are clicking on options --> options --> Go to default timeout value and change the time.
+
+
+
+Create multiple test cases
+Save them as a single test suit
+click on play entire test suite button
+
+Dubuggging in IDE
+This can be done by inserting a break point
+
+1. Right click on command where the break point should be inserted
+2. click on toggle break point
+ we will find a pause symbol generated on that command
+
+
+
+User Extensions
+---------------
+These are java script programes which are used to enhance the capabilities of IDE
+By default IDE doesn't support while loops and goto statements
+but we can implement them using user extensions
+
+1. open selenium .org
+2. Click on documentations
+3. Go to seleniumIDE part and click on "user extensions"
+4. click on "page" link
+5. click on https://github.com/73rhodes/sideflow 
+6. click on "clone or download" button
+7. click on download zip
+8. Extract it and open it we will find a "slideflow.js" file in it
+9. open IDE --> click on options --> click on options
+10. Go to selenium core extensions
+11. Browse the path of sideflow.js file
+12. click on Ok --> Restart IDE
+
+
+Running IDE scripts on multiple Browsers
+----------------------------------------
+IDE can perform recording only on FF.But recorded script can be executed on other Browsers
+For doing this little setup is necessary.
+

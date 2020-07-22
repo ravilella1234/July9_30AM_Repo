@@ -1,11 +1,11 @@
 package com.launcher;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -48,7 +48,11 @@ public class BaseTest
 		if(p.getProperty(browser).equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\July Drivers\\chromedriver.exe");
-			driver = new ChromeDriver();
+			ChromeOptions option = new ChromeOptions();
+			option.addArguments("user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 12");
+			option.addArguments("--disable-notifications");
+			
+			driver = new ChromeDriver(option);
 		}
 		else if(p.getProperty(browser).equals("firefox"))
 		{

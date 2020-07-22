@@ -1,0 +1,30 @@
+7. Dropdown
+   --------
+Operations to perform for Dropdownlist is:
+------------------------------------------
+
+a. Select an Option:
+   ----------------
+
+	Select dd=new Select(locator);
+
+	dd.selectByIndex(int Index);
+	dd.selectByValue(String value);
+	dd.selectByVisibleText(java.lang.String text);
+
+	dd.getFirstSelectedOption();
+
+	dd.getOptions();
+
+
+b. Get Selected Options:
+   --------------------
+
+	WebElement e=dd.getFirstSelectedOption()
+	List<webElement> e=dd.getOptions();
+
+
+	List<WebElement> e=dd.getAllSelectedOptions() ;
+	List<webElement> e=dd.getOptions();
+	e.getText();
+	e.isMultiple();

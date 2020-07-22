@@ -1,0 +1,145 @@
+
+Locators --> 8 types
+--------------------
+
+id() :- ID is the most preferred way to locate elements on a page, as each ID is supposed to be unique which makes id's a very faster & reliable way to locate elements.
+
+	Syntax: driver.findElement(By.id("id Attribute value"));
+
+
+Name() :- This is also an efficient way to locate elements with name attribute.After ID's give it your second preference but likewise ID's,name attributes don't have to unique in a page.
+
+	Syntax:  driver.findElement(By.name("name attribute value");
+
+
+
+ClassName() :- ClassName is used for applying CSS to elements in the application 
+	       Multiple elements can have the same class property.
+
+Note: The above 3 locators are called original properties because the developer 
+might or might not assign.
+
+	Syntax: driver.findElement(By.className("class attribute value"));
+
+
+linkText() & partialLinkText() :-
+       These 2 locators are used only when working on links.When we give complete linkname we use linkText().When we give section of link name we use partialLinkText()
+
+	Syntax: driver.findElement(By.linkText("Name of the link")); ----> (create an account)
+		driver.findElement(By.partialLinkText("partial Link name"));  ---> (create an)
+	
+
+Ex: inbox link in Gmail we use partial link Text Property
+
+
+
+xpath() :- This represents the adress of the element and it is always unique.xpath is classified into 2 types
+   1. Absolute Xpath  -- Allways starts with html tag
+   2. Relative Xpath  -- starts with //
+
+Note : Though xpath can identify any any element uniquely it will slow down the speed of the program
+
+	Syntax: driver.findElement(By.xpath(xpathExpression));
+	
+
+
+cssSelector() :- It stands for cascading style sheets.This is used by developers to apply colours and fonts.This is also a very fast locator,similar to id.css is also of 2 types
+
+		1. Relative
+		2. absolute
+
+	Syntax : driver.findElement(By.cssSelector(selector));
+
+
+
+tagName() :- This represents the html tag of the elements,and it is generally used when working on multiple elements.
+
+	Syntax : driver.findElements(By.tagName(name of that tag));
+
+
+
+				WebDriver Methods(13)
+				-----------------------
+
+WebDriver uses 13 methods to perform various activities on the webapplication
+
+1. get() --> This uses to navigate to a URL
+	Ex: driver.get("URL");
+
+2. getTitle() --> This will capture the title of the page opened by WebDriver
+	Ex: driver.getTitle();
+
+3. getCurrentURL() --> This will capture the url of the page opened by WebDriver
+	EX: driver.getCurrentUrl();
+
+4. getPageSource() --> This will capture html source code of the page opened by WebDriver
+	EX: driver.getPageSource();
+
+5. findElement() --> This is used to identify one element on the page.This identification can be done based on any of the locators previously discussed
+	EX: driver.findElement(By.locator());
+
+6. findElements() --> This is used to identify multiple elements on the webapplication.This can also be used all the 8 locators
+	EX: driver.findElements(By.locator());
+
+7. close() --> This is used to close the application opened by WebDriver.It will close only one window.Where the control of WebDriver is present.
+	EX: driver.close();
+
+8. quit() --> This is used to close all the windows & tabs ,opened by WebDriver
+	EX: driver.quit();
+
+9. getWindowHandle() --> When ever selenium launches a window it assigns a unique id to every window.
+			 We can capture this window handler using this method.
+	EX: driver.getWindowHandle();
+
+10. getWindowHandles() --> When multiple windows are opened by WebDriver 
+			   when we want to capture all their id's we can use this methods.
+	EX: driver.getWindowHandles();
+
+11. switchTo() --> This method is used to switch from one window to another window.
+		   also can used to switch into a frame.
+                   also can used to switch into an alert.
+		   also can used to switch to main page opened by webdriver
+	EX: driver.switchTo().window();
+	    driver.switchTo().alert();
+	    driver.switchTo().frame();
+
+12. navigate() --> This also used to navigate to a url 
+			It can be used to click on backward or forward buttons of the browser
+	Ex: driver.navigate().to("URL");
+	    driver.navigate().back();
+	    driver.navigate().forward();
+	    driver.navigate().refresh();
+
+13. manage() --> This used for performing various activities like maximizing the browser size,setting
+	         implecit waits, capturing cookies info etc.....
+	EX: driver.manage()............
+
+
+	Operations on WebElements
+	---------------------------------
+
+1. click() --> This is used to clickon link,image,button,checkbox,radiobutton etc....
+
+2. sendKeys() --> This is used for entering text into input fields
+
+3. clear() --> This used for clearing the input fields before entering some data.
+
+4. getText() --> This will capture any visible text in application
+
+5. getAttribute() --> This will capture the properties of a webElement
+
+6. getLocation().x --> This will capture the x coordinate of a webElement
+
+7. getLocation().y --> This will capture the y coordinate of a webElement
+
+8. getSize() --> This will capture the size of an input fields
+
+9. getTagName() --> This will capture the html tag of web elements
+
+10. isDisplayed() --> This is used to check if a webelement is visible or hidden
+
+11. isSelected() --> This is used to check if a check box is selected or an option in dropdown is selected or radio button is selected
+
+12. isEnabled() --> This used to find if a webElement is enabled or disabled
+
+

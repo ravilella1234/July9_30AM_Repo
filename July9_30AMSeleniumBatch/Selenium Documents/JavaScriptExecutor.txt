@@ -1,0 +1,41 @@
+
+				JavaScriptExecutor
+			      ------------------------		
+
+JavaScriptExecutor is one of the interfaces in selenium.The basic advantage of javaScriptExecutor is it provides a way to execute javaScipt in selenium WebDriver.Sometimes locators may not work,in that case javaScriptExcutor will helps to interact with the web elements on the particular webpage. The reason behind this is, even selenium WebDriver internally converts language bindings into its equivalent javaScript and injects into the respective browser.JavaScriptExecutor is also very useful to identify and interact with the hidden and disabled elements on the webpage.
+
+
+
+
+As JavaScriptExecutor is an interfarce so we can not create an object to this,for this we will type to driver object using below syntax:
+
+
+
+  javasciptExecutor js=(javascriptExecutor)driver;
+  js.executeScript(script,arguments);
+
+
+
+
+Now we will see some of the examples below that how we can use javaScriptExecutor to execute the javaScript to interact with the web elements.
+
+   How to enter value into textbox
+   How to click a button
+   How to refresh a window
+   How to get the text of a particular web element
+   How to get the title of the webpage
+   How to scroll vertically for certain pixles
+   How to scroll till the button of the web page
+   How to scroll to a particular element
+   How to navigate back to page
+   How to navigate to next page
+
+
+document.getElementById('email').value='ravilella'
+document.getElementById('loginbutton').click();
+history.go(0)
+
+document.getElementsByClassName('uiButton uiButtonConfirm').innerHTML
+
+querySelector
+

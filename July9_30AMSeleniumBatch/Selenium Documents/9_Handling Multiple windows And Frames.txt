@@ -1,0 +1,125 @@
+********************************************************************************************************
+					Handling Multiple windows
+					Handling Frames
+********************************************************************************************************
+
+
+
+1. Handling Multiple Windows:
+   -------------------------
+
+
+What are multiple Windows?
+
+ >  For suppose we have "WINDOW-A".Clicking on a link of WINDOW-A will open a new     "WINDOW-B" and clicking on a link of "WINDOW-B" will open a new "WINDOW-C".
+
+ >  Here WINDOW-A, WINDOW-B, WINDOW-C are called as multiple windows.
+
+ > In order to perform any action on the "WINDOW-B" or "WINDOW-C", we need to switch    driver focous accordingly.We can switch to the desired window using below syntax.
+
+
+Syntax:
+-------
+
+   driver.switchTo().window(handle/name);
+
+
+By using below methods we will get windows handle
+
+a. getWindowHandle(); ---> Return a string of alphanumeric window handle
+b. getWindowHandles(); ---> Return a set of window handles which can be used to iterate over all open windows.  
+
+
+
+
+
+2. Handling Frames:
+   ----------------
+
+In a webPage,there might be some element that exists inside the iframe/frame.We cannot directly perform any action on the elements that exists in the iframe/frame,for that we need to switch into iframe/frame and then perform action on it.
+
+
+We can switch to frame unsing 3 different ways
+
+
+     1.) Using By Index : Select a frame by its (Zero-based) index	
+	    driver.switchTo().frame(index);
+
+
+     2.) Using By Name or ID : Select a frame using by its name or ID
+	    driver.switchTo().frame(name/id);
+
+
+     3.) Using By Locator : Select a frame using its previously located by identification method like id,Xpath,cssselector
+	    driver.switchTo().frame(locator);
+
+
+
+3. Handling Multiple Frames:
+   -------------------------
+
+To Handle multiple frames we will switch the control back to the main window.To do this you can use the following 
+
+syntax: 
+-------
+
+ driver.switchTo().defaultContent();
+
+
+Note:  defaultContent() Selects either the first frame on the page ,or the main document when a page contains iframes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+GRID -2
+--------
+
+Grid is used for implementing distributed Testing.In GRID we have a server called HUB. This Hub is connected to multiple terminals called NODES. Each of these can be running on same OS or Different OS.Similarly they can be using the same browers or different Browsers. Using GRID we can perform cross Browser & cross platform Testing serially or parlally.
+
+GRID when implemented with webDriver is called GRID2
+When it was implementd with RC is called GRID1
+
+Note: GRID is most compactable with TestNG framework.Because TestNG supports both serial & Parllel Testing .Where as JUnit only supports only serial Testing.
+
+
+Process of creating of HUB
+-------------------------
+1. Open cmd prompt in the machine which should be converted as HUB.
+2. Change directory to the location where a copy of selenium server jar is present .cd path of selenium server jar
+3. java -jar C:\Users\ravilella\Downloads\selenium-server-standalone-3.4.0.jar -role hub
+
+Console View
+------------
+   http://localhost:4444/grid/console
+
+Process of creating NODE
+------------------------
+1. Open cmd prompt in machine which should be converted as node
+2. Change directory to the location where a copy of selenium server jar is present. cd path of selenium server jar
+3. java -jar C:\Users\ravilella\Downloads\selenium-server-standalone-3.4.0.jar -role node -hub http://localhost:4444/grid/register -port 6666
+
+HUB by default starts on port number  4444
+NODE by default starts on port number 5555
+
+
+Important classes to used
+--------------------------
+DesiredCapabilities :- This is inbuilt class in selenium which is used to specify which browser we want to use,which version of browser we want to use.Which OS to use etc...
+
+RemoteWebDriver :- This is used to run the selenium Test on a remote machine.It accepts 2 arguments
+                  1) ip address of HUB Server
+	          2) DesiredCapabilities Object
+
+
+The node we create previously can work for only on firefox Browsers.It will not work on IE & chrome.To automate the other Browsers we should specify the path of their corresponding exe files in the command prompt at the time of creation of node.
+
+	java -DwebDriver.chrome.driver=c:\chromedriver.exe
+	     -DwebDriver.ie.driver=c:\IEDriverServer.exe
+	     -jar selenium-server-standalone-2.53.1.jar
+   	     -role node
+	     -hub http://localhost:4444/grid/register
+	     -port 5555
+
+
+
+Nodes to customize the Browsers count
+
+	java -jar selenium-server-standalone-2.53.1.jar
+   	     -role webDriver
+	     -hub http://localhost:4444/grid/register
+	     -browser browserName=safari,maxInstances=4
+	     -browser browserName=chrome,maxInstances=3
+	     -browser browserName=firefox,maxInstances=2
+	     -browser browserName=iexplore,maxInstances=1
+	     -port 9999
+
+
+
+
+Points to be careful on when we run tests in parallel-
+
+1. Only those tests in paralell -independent of each other.
+2. Tests if ru together could a cause a conflict,or is dependent
+   like test2 can be only be executed if test 1 is pass...
+3. Different data sets for tests to be run in parallel if conflict could occur.
+4. Start & end should the same.
+5.Browsers  -should be very careful -No setting done which requires manual intervention
+   - Do u want remember password
+   - pop up do u want to unblock
+   - or this browser is not ur default browser,do u want to set.
+6. It is always in test automation to have a seperate dedicated lab for
+
+Reasons
+--------
+a. USe to perform cross Browser testong -UI of ur age ,functionality.
+b. Save time 1,00,000 flows -we can divide them logically and start their on executions on different nodes at the same time.
+
+No tests are dependent on the test of other group
+
+c. When your application has a feature which supports multiple languages dwth differernt versions of application exists.
+

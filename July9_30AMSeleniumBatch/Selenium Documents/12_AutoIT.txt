@@ -1,0 +1,55 @@
+1. How to Download AutoIT
+2. How to install AutoIT
+3. Check Help Section
+4. Script Editor
+5. How to upload file in Selenium using AutoIT
+
+
+
+
+1. What is Authentication window
+2. Write Script to handle Authentication Window
+3. Integration of AutoIT scripts with selenium webdriver.
+
+http://www.engprod-charter.net/
+
+
+Handling security authentication pop up using Autoit-Selenium webDriver
+sudheer
+
+
+Uploading multiple files or uplosd files in RunTime using AutoIT
+
+1. What is command line argument
+	ControlSetText("File Upload","","Edit1","c:\..\..\abc.txt")	
+	ControlSetText("File Upload","","Edit1",$CmdLine[1])
+
+2. How to pass file name at RunTime
+	Runtime.getRunTime().exec("AutoITCode"+""+"file to upload");
+
+3. Precondition
+
+How to upload file using AutoIT
+
+ControlFocous("File Upload","","Edit1")
+ControlSetText("File Upload","",Edit1,""c:\..\..\\123.txt")
+ControlClick("File Upload","","Button1")
+
+
+ControlFocous("File Upload","","Edit1")
+ControlSetText("File Upload","",Edit1,",$CmdLine[1])
+ControlClick("File Upload","","Button1")
+
+
+
+What is Cross Browser Testing
+How to achieve Cross Browser Testing in Selenium
+How to Execute testcase in Multiple browsers
+How to execute case in multiple browser in parlell
+Check Reports
+
+
+
+
+
+
