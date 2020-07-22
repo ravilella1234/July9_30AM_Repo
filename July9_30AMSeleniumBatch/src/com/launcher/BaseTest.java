@@ -2,6 +2,7 @@ package com.launcher;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -42,12 +43,12 @@ public class BaseTest
 	{
 		if(p.getProperty(browser).equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "E:\\Selenium Ravilella\\SeleniumWebdrivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\July Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if(p.getProperty(browser).equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "E:\\Selenium Ravilella\\SeleniumWebdrivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\DELL\\Desktop\\July Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 	}
