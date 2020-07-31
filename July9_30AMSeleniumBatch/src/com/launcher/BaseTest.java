@@ -3,6 +3,7 @@ package com.launcher;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -49,13 +50,15 @@ public class BaseTest
 		or = new Properties();
 		or.load(fis);
 		
+		fis = new FileInputStream(projectPath + "//log4jconfig.properties");
+		PropertyConfigurator.configure(fis);
 	}
 	
 	public static void launch(String browser)
 	{
 		if(p.getProperty(browser).equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\July Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\JulyDrivers\\chromedriver.exe");
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 12");
 			option.addArguments("--disable-notifications");
@@ -64,7 +67,7 @@ public class BaseTest
 		}
 		else if(p.getProperty(browser).equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\DELL\\Desktop\\July Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\DELL\\Desktop\\JulyDrivers\\geckodriver.exe");
 			
 			ProfilesIni p = new ProfilesIni();
 			FirefoxProfile profile = p.getProfile("JulyFFProfile");

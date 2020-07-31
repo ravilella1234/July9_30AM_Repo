@@ -1,0 +1,24 @@
+Initilizing Properties files.....
+Opened the browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selected the option Books By using the locator :- url
+Entered the test Harry Potter By using the locator :- //input[@id='twotabsearchtextbox']
+Clicked on Search button By using locator :- nav-input
+Initilizing Properties files.....
+Opened the browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selected the option Books By using the locator :- url
+Entered the test Harry Potter By using the locator :- //input[@id='twotabsearchtextbox']
+Clicked on Search button By using locator :- nav-input
+Initilizing Properties files.....
+Opened the browser :- chrome
+Navigated to url :- https://www.amazon.in
+Initilizing Properties files.....
+Opened the browser :- chrome
+Navigated to url :- https://www.amazon.in
+Initilizing Properties files.....
+Opened the browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selected the option Books By using the locator :- url
+Entered the test Harry Potter By using the locator :- //input[@id='twotabsearchtextbox']
+Clicked on Search button By using locator :- nav-input
