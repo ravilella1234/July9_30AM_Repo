@@ -24,8 +24,6 @@ public class B extends A // IsA Relationship
 		A  obj = new B();
 		obj.m1();
 		
-				
-		B obj1 = new A();
 	}
 
 }
