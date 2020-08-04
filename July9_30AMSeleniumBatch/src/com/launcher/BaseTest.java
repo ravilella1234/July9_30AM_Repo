@@ -1,11 +1,14 @@
 package com.launcher;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.Date;
 import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,9 +17,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
+import org.openqa.selenium.io.FileHandler;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseTest 
 {
@@ -147,5 +152,45 @@ public class BaseTest
 		
 		return element;
 	}
+	
+	
+	// ***************************  Verifications  ***********************
+	
+	public static boolean verifyLink(String expectedLink) 
+	{
+		String actualLink = driver.findElement(By.linkText("New Releases")).getAttribute("innerHTML");
+		if(actualLink.equals(expectedLink))
+			return true;
+		else
+			return false;
+	}
+	
+	
+	
+	// *******************************  Reportings   *********************
+	
+	public static void reportSucess(String successMsg) 
+	{
+		test.log(LogStatus.PASS, successMsg);
+	}
+
+	public static void reportFailure(String failureMsg) throws Exception 
+	{
+		test.log(LogStatus.FAIL, failureMsg);
+		takesScreenshot();
+	}
+
+	public static void takesScreenshot() throws Exception 
+	{
+		Date dt=new Date();
+		System.out.println(dt);
+		String dateFormat=dt.toString().replace(":", "_").replace(" ", "_")+".png";		
+		File scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileHandler.copy(scrFile, new File(projectPath+"\\failurescreenshots\\"+dateFormat));
+		
+		test.log(LogStatus.INFO, "Screenshot --->" +test.addScreenCapture(projectPath+"\\failurescreenshots\\"+dateFormat));
+		
+	}
+	
 
 }
