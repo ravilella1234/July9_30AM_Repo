@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/JulyDrivers/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/JulyDrivers/extentreports-2.41.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/JulyDrivers/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/JulyDrivers/testng-6.14.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
