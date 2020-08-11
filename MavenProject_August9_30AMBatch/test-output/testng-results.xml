@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="83" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="83" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+      <class name="com.selenium.MavenProject_August9_30AMBatch.TestNG001">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="beforeSuite" is-config="true" duration-ms="38" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="beforeClass" is-config="true" duration-ms="1" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f()[pri:1, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="f" duration-ms="10" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="startProcess" is-config="true" duration-ms="0" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="endProcess" is-config="true" duration-ms="0" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+        <test-method status="PASS" signature="a()[pri:3, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="a" duration-ms="4" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="startProcess" is-config="true" duration-ms="0" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="endProcess" is-config="true" duration-ms="2" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG001@23282c25]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-08-11T05:01:43Z" finished-at="2020-08-11T05:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.TestNG001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
