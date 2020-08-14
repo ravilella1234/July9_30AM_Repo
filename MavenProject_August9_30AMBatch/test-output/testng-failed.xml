@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationSuite]">
+  <test thread-count="5" name="AutomationTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.selenium.MavenProject_August9_30AMBatch.RadioButton1">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="RadioButtonTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.RadioButton1 -->
+    </classes>
+  </test> <!-- AutomationTest(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->

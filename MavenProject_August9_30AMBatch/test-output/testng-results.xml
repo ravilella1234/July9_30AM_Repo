@@ -1,73 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
-    <line>
-      <![CDATA[Clicked on Image Link]]>
-    </line>
   </reporter-output>
-  <suite name="AutomationSuite" duration-ms="59877" started-at="2020-08-12T04:48:41Z" finished-at="2020-08-12T04:49:41Z">
+  <suite name="Suite" duration-ms="154" started-at="2020-08-14T05:02:33Z" finished-at="2020-08-14T05:02:33Z">
     <groups>
     </groups>
-    <test name="AutomationTest" duration-ms="59877" started-at="2020-08-12T04:48:41Z" finished-at="2020-08-12T04:49:41Z">
-      <class name="com.selenium.MavenProject_August9_30AMBatch.LinksTesting1">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.LinksTesting1@6295d394]" name="setup" is-config="true" duration-ms="8777" started-at="2020-08-12T04:49:20Z" finished-at="2020-08-12T04:49:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="linktesting1()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.LinksTesting1@6295d394]" name="linktesting1" duration-ms="2023" started-at="2020-08-12T04:49:29Z" finished-at="2020-08-12T04:49:31Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked on Image Link]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- linktesting1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.LinksTesting1@6295d394]" name="tearDown" is-config="true" duration-ms="862" started-at="2020-08-12T04:49:31Z" finished-at="2020-08-12T04:49:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.LinksTesting1 -->
-      <class name="com.selenium.MavenProject_August9_30AMBatch.RadioButton1">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.RadioButton1@21507a04]" name="beforeMethod" is-config="true" duration-ms="10484" started-at="2020-08-12T04:48:41Z" finished-at="2020-08-12T04:48:51Z">
+    <test name="Test" duration-ms="154" started-at="2020-08-14T05:02:33Z" finished-at="2020-08-14T05:02:33Z">
+      <class name="com.selenium.MavenProject_August9_30AMBatch.Class1">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.Class1@3ee0fea4]" name="beforeMethod" is-config="true" duration-ms="23" started-at="2020-08-14T05:02:33Z" finished-at="2020-08-14T05:02:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="RadioButtonTest()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.RadioButton1@21507a04]" name="RadioButtonTest" duration-ms="4173" started-at="2020-08-12T04:48:51Z" finished-at="2020-08-12T04:48:56Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.Class1@3ee0fea4]" name="f" duration-ms="16" started-at="2020-08-14T05:02:33Z" finished-at="2020-08-14T05:02:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RadioButtonTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.RadioButton1@21507a04]" name="afterMethod" is-config="true" duration-ms="1105" started-at="2020-08-12T04:48:56Z" finished-at="2020-08-12T04:48:57Z">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.Class1@3ee0fea4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-08-14T05:02:33Z" finished-at="2020-08-14T05:02:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.RadioButton1 -->
-      <class name="com.selenium.MavenProject_August9_30AMBatch.TestNG002">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@143640d5]" name="startProcess" is-config="true" duration-ms="11947" started-at="2020-08-12T04:48:57Z" finished-at="2020-08-12T04:49:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@143640d5]" name="amazon" duration-ms="9325" started-at="2020-08-12T04:49:09Z" finished-at="2020-08-12T04:49:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@143640d5]" name="endProcess" is-config="true" duration-ms="1766" started-at="2020-08-12T04:49:18Z" finished-at="2020-08-12T04:49:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.TestNG002 -->
-      <class name="com.selenium.MavenProject_August9_30AMBatch.CheckBox1">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.CheckBox1@475e586c]" name="beforeMethod" is-config="true" duration-ms="8146" started-at="2020-08-12T04:49:31Z" finished-at="2020-08-12T04:49:40Z">
+      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.Class1 -->
+      <class name="com.selenium.MavenProject_August9_30AMBatch.Class2">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.Class2@358c99f5]" name="beforeMethod" is-config="true" duration-ms="25" started-at="2020-08-14T05:02:33Z" finished-at="2020-08-14T05:02:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.CheckBox1@475e586c]" name="checkboxTest" duration-ms="377" started-at="2020-08-12T04:49:40Z" finished-at="2020-08-12T04:49:40Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.Class2@358c99f5]" name="f" duration-ms="11" started-at="2020-08-14T05:02:33Z" finished-at="2020-08-14T05:02:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.CheckBox1@475e586c]" name="afterMethod" is-config="true" duration-ms="807" started-at="2020-08-12T04:49:40Z" finished-at="2020-08-12T04:49:41Z">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.Class2@358c99f5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-08-14T05:02:33Z" finished-at="2020-08-14T05:02:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.CheckBox1 -->
-    </test> <!-- AutomationTest -->
-  </suite> <!-- AutomationSuite -->
+      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.Class2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

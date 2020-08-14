@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -14,13 +15,14 @@ public class RadioButton1 extends BaseTest
 {
 
 	@BeforeMethod
-	 public void beforeMethod() throws Exception 
+	@Parameters("browser")
+	 public void beforeMethod(String bType) throws Exception 
 	 {
 		init();
 		test = report.startTest("RadioButton1");
 		test.log(LogStatus.INFO, "Initilizing Properties files.....");
 		
-		launch("chromebrowser");
+		launch(bType);
 		test.log(LogStatus.INFO, "Opened the browser :- " + p.getProperty("chromebrowser"));
 		
 		navigateUrl("radiourl");

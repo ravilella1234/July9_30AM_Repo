@@ -78,7 +78,7 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(p.getProperty(browser).equals("chrome"))
+		if(browser.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\JulyDrivers\\chromedriver.exe");
 			ChromeOptions option = new ChromeOptions();
@@ -87,7 +87,7 @@ public class BaseTest
 			
 			driver = new ChromeDriver(option);
 		}
-		else if(p.getProperty(browser).equals("firefox"))
+		else if(browser.equals("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", "C:\\Users\\DELL\\Desktop\\JulyDrivers\\geckodriver.exe");
 			

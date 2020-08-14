@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+  <test thread-count="5" name="Test" >
+    <classes>
+      <class name="com.selenium.MavenProject_August9_30AMBatch.Class2"/>
+      <class name="com.selenium.MavenProject_August9_30AMBatch.Class1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -13,13 +14,14 @@ public class LinksTesting1 extends BaseTest
 {
 	
 	@BeforeMethod
-	public void setup() throws Exception
+	@Parameters("browser")
+	public void setup(String bType) throws Exception
 	{
 		init();
 		test = report.startTest("LinksTesting1");
 		test.log(LogStatus.INFO, "Initilizing Properties files.....");
 		
-		launch("chromebrowser");
+		launch(bType);
 		test.log(LogStatus.INFO, "Opened the browser :- " + p.getProperty("chromebrowser"));
 		
 		navigateUrl("googleurl");
