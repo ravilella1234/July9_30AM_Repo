@@ -12,7 +12,7 @@ public class TestNG002 extends BaseTest
 {
  
   
-  @BeforeMethod
+  @BeforeMethod(groups = {"regression","sanity"})
   @Parameters("browser")
   public void startProcess(String bType) throws Exception 
   {
@@ -28,7 +28,7 @@ public class TestNG002 extends BaseTest
 	  
   }
   
-  @Test
+  @Test(groups = {"regression","sanity"})
   public void amazon() 
   {
 	  	selectOption("amazondropdown_name","Books");
@@ -41,7 +41,7 @@ public class TestNG002 extends BaseTest
 		test.log(LogStatus.PASS, "Clicked on Search button By using locator :- " + or.getProperty("amazonsearchbutton_class"));
   }
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","sanity"})
   public void endProcess() 
   {
 	  driver.quit();
