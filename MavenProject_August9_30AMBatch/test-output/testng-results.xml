@@ -1,28 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" ignored="0" total="4" passed="2">
+<testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test Started Running :amazon]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test amazon with status FAILURE for the 1 time(s).]]>
+    </line>
+    <line>
+      <![CDATA[Test is skipped :amazon]]>
+    </line>
+    <line>
+      <![CDATA[Test Started Running :amazon]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test amazon with status FAILURE for the 2 time(s).]]>
+    </line>
+    <line>
+      <![CDATA[Test is skipped :amazon]]>
+    </line>
+    <line>
+      <![CDATA[Test Started Running :amazon]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\AprilWorkSpace\MavenProject_August9_30AMBatch//failure//Wed_Aug_19_10_22_32_IST_2020.png'> <img src='D:\AprilWorkSpace\MavenProject_August9_30AMBatch//failure//Wed_Aug_19_10_22_32_IST_2020.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[Test has Failed:amazon]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="140" started-at="2020-08-18T04:42:04Z" finished-at="2020-08-18T04:42:04Z">
+  <suite name="Suite" duration-ms="47310" started-at="2020-08-19T04:52:33Z" finished-at="2020-08-19T04:53:20Z">
     <groups>
+      <group name="regression">
+        <method signature="TestNG002.amazon()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="amazon" class="com.selenium.MavenProject_August9_30AMBatch.TestNG002"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TestNG002.amazon()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="amazon" class="com.selenium.MavenProject_August9_30AMBatch.TestNG002"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Default test" duration-ms="140" started-at="2020-08-18T04:42:04Z" finished-at="2020-08-18T04:42:04Z">
-      <class name="com.selenium.MavenProject_August9_30AMBatch.TestDependency">
-        <test-method status="PASS" signature="orange()[pri:1, instance:com.selenium.MavenProject_August9_30AMBatch.TestDependency@5ef60048]" name="orange" duration-ms="21" started-at="2020-08-18T04:42:04Z" finished-at="2020-08-18T04:42:04Z">
+    <test name="Test" duration-ms="47310" started-at="2020-08-19T04:52:33Z" finished-at="2020-08-19T04:53:20Z">
+      <class name="com.selenium.MavenProject_August9_30AMBatch.TestNG002">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="startProcess" is-config="true" duration-ms="10968" started-at="2020-08-19T04:52:33Z" finished-at="2020-08-19T04:52:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orange -->
-        <test-method status="PASS" signature="white()[pri:2, instance:com.selenium.MavenProject_August9_30AMBatch.TestDependency@5ef60048]" name="white" duration-ms="2" started-at="2020-08-18T04:42:04Z" depends-on-methods="com.selenium.MavenProject_August9_30AMBatch.TestDependency.orange" finished-at="2020-08-18T04:42:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- white -->
-        <test-method status="SKIP" signature="blue()[pri:3, instance:com.selenium.MavenProject_August9_30AMBatch.TestDependency@5ef60048]" name="blue" duration-ms="6" started-at="2020-08-18T04:42:04Z" depends-on-methods="com.selenium.MavenProject_August9_30AMBatch.TestDependency.white" finished-at="2020-08-18T04:42:04Z">
-          <exception class="org.testng.SkipException">
+        </test-method> <!-- startProcess -->
+        <test-method status="SKIP" signature="amazon()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="amazon" duration-ms="4060" started-at="2020-08-19T04:52:44Z" finished-at="2020-08-19T04:52:48Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Blue test is skipped....]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".nav\-input1"}
+  (Session info: chrome=84.0.4147.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-27L8JE7', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 92683df12603f5112a97696eb493ea3a
+*** Element info: {Using=class name, value=nav-input1}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Blue test is skipped....
-at com.selenium.MavenProject_August9_30AMBatch.TestDependency.blue(TestDependency.java:27)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".nav\-input1"}
+  (Session info: chrome=84.0.4147.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-27L8JE7', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 92683df12603f5112a97696eb493ea3a
+*** Element info: {Using=class name, value=nav-input1}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.selenium.MavenProject_August9_30AMBatch.BaseTest.getElement(BaseTest.java:141)
+at com.selenium.MavenProject_August9_30AMBatch.BaseTest.clickElement(BaseTest.java:116)
+at com.selenium.MavenProject_August9_30AMBatch.TestNG002.amazon(TestNG002.java:40)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -50,18 +118,82 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started Running :amazon]]>
+            </line>
+            <line>
+              <![CDATA[Retrying test amazon with status FAILURE for the 1 time(s).]]>
+            </line>
+            <line>
+              <![CDATA[Test is skipped :amazon]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="endProcess" is-config="true" duration-ms="1718" started-at="2020-08-19T04:52:48Z" finished-at="2020-08-19T04:52:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- blue -->
-        <test-method status="SKIP" signature="green()[pri:4, instance:com.selenium.MavenProject_August9_30AMBatch.TestDependency@5ef60048]" name="green" duration-ms="0" started-at="2020-08-18T04:42:04Z" depends-on-methods="com.selenium.MavenProject_August9_30AMBatch.TestDependency.blue" finished-at="2020-08-18T04:42:04Z">
-          <exception class="java.lang.Throwable">
+        </test-method> <!-- endProcess -->
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="startProcess" is-config="true" duration-ms="9591" started-at="2020-08-19T04:52:50Z" finished-at="2020-08-19T04:52:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="SKIP" signature="amazon()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="amazon" duration-ms="4068" started-at="2020-08-19T04:52:59Z" finished-at="2020-08-19T04:53:03Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Method TestDependency.green()[pri:4, instance:com.selenium.MavenProject_August9_30AMBatch.TestDependency@5ef60048] depends on not successfully finished methods]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".nav\-input1"}
+  (Session info: chrome=84.0.4147.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-27L8JE7', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49580}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 93937003b0650e2ce9957ef8a5bed70b
+*** Element info: {Using=class name, value=nav-input1}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestDependency.green()[pri:4, instance:com.selenium.MavenProject_August9_30AMBatch.TestDependency@5ef60048] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".nav\-input1"}
+  (Session info: chrome=84.0.4147.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-27L8JE7', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49580}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 93937003b0650e2ce9957ef8a5bed70b
+*** Element info: {Using=class name, value=nav-input1}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.selenium.MavenProject_August9_30AMBatch.BaseTest.getElement(BaseTest.java:141)
+at com.selenium.MavenProject_August9_30AMBatch.BaseTest.clickElement(BaseTest.java:116)
+at com.selenium.MavenProject_August9_30AMBatch.TestNG002.amazon(TestNG002.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -81,11 +213,119 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started Running :amazon]]>
+            </line>
+            <line>
+              <![CDATA[Retrying test amazon with status FAILURE for the 2 time(s).]]>
+            </line>
+            <line>
+              <![CDATA[Test is skipped :amazon]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="endProcess" is-config="true" duration-ms="1034" started-at="2020-08-19T04:53:03Z" finished-at="2020-08-19T04:53:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- green -->
-      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.TestDependency -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- endProcess -->
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="startProcess" is-config="true" duration-ms="10389" started-at="2020-08-19T04:53:04Z" finished-at="2020-08-19T04:53:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="FAIL" signature="amazon()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="amazon" duration-ms="3517" started-at="2020-08-19T04:53:15Z" finished-at="2020-08-19T04:53:18Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".nav\-input1"}
+  (Session info: chrome=84.0.4147.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-27L8JE7', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49614}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6205fba257bc7ecce5f6b284d98e9c13
+*** Element info: {Using=class name, value=nav-input1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".nav\-input1"}
+  (Session info: chrome=84.0.4147.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-27L8JE7', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49614}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6205fba257bc7ecce5f6b284d98e9c13
+*** Element info: {Using=class name, value=nav-input1}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.selenium.MavenProject_August9_30AMBatch.BaseTest.getElement(BaseTest.java:141)
+at com.selenium.MavenProject_August9_30AMBatch.BaseTest.clickElement(BaseTest.java:116)
+at com.selenium.MavenProject_August9_30AMBatch.TestNG002.amazon(TestNG002.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started Running :amazon]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\AprilWorkSpace\MavenProject_August9_30AMBatch//failure//Wed_Aug_19_10_22_32_IST_2020.png'> <img src='D:\AprilWorkSpace\MavenProject_August9_30AMBatch//failure//Wed_Aug_19_10_22_32_IST_2020.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[Test has Failed:amazon]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.selenium.MavenProject_August9_30AMBatch.TestNG002@527e5409]" name="endProcess" is-config="true" duration-ms="866" started-at="2020-08-19T04:53:19Z" finished-at="2020-08-19T04:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.TestNG002 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

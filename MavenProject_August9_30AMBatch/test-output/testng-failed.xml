@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listnerspack.Listner"/>
+    <listener class-name="listnerspack.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.selenium.MavenProject_August9_30AMBatch.TestDependency">
+      <class name="com.selenium.MavenProject_August9_30AMBatch.TestNG002">
         <methods>
-          <include name="green"/>
-          <include name="blue"/>
-          <include name="white"/>
-          <include name="orange"/>
+          <include name="amazon"/>
+          <include name="startProcess"/>
+          <include name="endProcess"/>
         </methods>
-      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.TestDependency -->
+      </class> <!-- com.selenium.MavenProject_August9_30AMBatch.TestNG002 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

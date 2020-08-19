@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	
-  <groups>
-  	<run>
-  		<include name="smoke"></include>
-  	</run>
-  </groups>
+
+  <listeners>
+  	<listener class-name="listnerspack.Listner"></listener>
+  	<listener class-name="listnerspack.RetryListener"></listener>
+  </listeners>
+
 
   <test thread-count="5" name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="com.selenium.MavenProject_August9_30AMBatch.RadioButton1"/>
       <class name="com.selenium.MavenProject_August9_30AMBatch.TestNG002"/>
-      <class name="com.selenium.MavenProject_August9_30AMBatch.LinksTesting1"/>
-      <class name="com.selenium.MavenProject_August9_30AMBatch.CheckBox1"/>
     </classes>
   </test> <!-- Test -->
-  
 </suite> <!-- Suite -->
