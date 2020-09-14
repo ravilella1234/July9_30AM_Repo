@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20018" started-at="2020-08-27T05:02:11Z" finished-at="2020-08-27T05:02:31Z">
+  <suite name="Default suite" duration-ms="17958" started-at="2020-09-14T04:53:20Z" finished-at="2020-09-14T04:53:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20018" started-at="2020-08-27T05:02:11Z" finished-at="2020-08-27T05:02:31Z">
-      <class name="excelDataDriven.FBScenario">
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.FBScenario@258e2e41]" name="f" duration-ms="9648" started-at="2020-08-27T05:02:12Z" data-provider="getData" finished-at="2020-08-27T05:02:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedResult=LoginSuccuss, RunMode=Y, UserPassword=zoho2015, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="17958" started-at="2020-09-14T04:53:20Z" finished-at="2020-09-14T04:53:38Z">
+      <class name="switchings.FileUpload">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:switchings.FileUpload@436a4e4b]" name="beforeMethod" is-config="true" duration-ms="14443" started-at="2020-09-14T04:53:20Z" finished-at="2020-09-14T04:53:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.FBScenario@258e2e41]" name="f" duration-ms="8898" started-at="2020-08-27T05:02:22Z" data-provider="getData" finished-at="2020-08-27T05:02:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedResult=LoginSuccuss, RunMode=N, UserPassword=password2, UserName=user2, Browser=firefox}]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="fileupload()[pri:0, instance:switchings.FileUpload@436a4e4b]" name="fileupload" duration-ms="3362" started-at="2020-09-14T04:53:35Z" finished-at="2020-09-14T04:53:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- excelDataDriven.FBScenario -->
+        </test-method> <!-- fileupload -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:switchings.FileUpload@436a4e4b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-14T04:53:38Z" finished-at="2020-09-14T04:53:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- switchings.FileUpload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
