@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17958" started-at="2020-09-14T04:53:20Z" finished-at="2020-09-14T04:53:38Z">
+  <suite name="Default suite" duration-ms="14312" started-at="2020-09-15T04:55:58Z" finished-at="2020-09-15T04:56:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17958" started-at="2020-09-14T04:53:20Z" finished-at="2020-09-14T04:53:38Z">
-      <class name="switchings.FileUpload">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:switchings.FileUpload@436a4e4b]" name="beforeMethod" is-config="true" duration-ms="14443" started-at="2020-09-14T04:53:20Z" finished-at="2020-09-14T04:53:35Z">
+    <test name="Default test" duration-ms="14312" started-at="2020-09-15T04:55:58Z" finished-at="2020-09-15T04:56:12Z">
+      <class name="actions.MouseOperations">
+        <test-method status="PASS" signature="setup()[pri:0, instance:actions.MouseOperations@436a4e4b]" name="setup" is-config="true" duration-ms="6853" started-at="2020-09-15T04:55:58Z" finished-at="2020-09-15T04:56:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="fileupload()[pri:0, instance:switchings.FileUpload@436a4e4b]" name="fileupload" duration-ms="3362" started-at="2020-09-14T04:53:35Z" finished-at="2020-09-14T04:53:38Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="autoSuggestion()[pri:7, instance:actions.MouseOperations@436a4e4b]" name="autoSuggestion" duration-ms="7366" started-at="2020-09-15T04:56:05Z" finished-at="2020-09-15T04:56:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fileupload -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:switchings.FileUpload@436a4e4b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-14T04:53:38Z" finished-at="2020-09-14T04:53:38Z">
+        </test-method> <!-- autoSuggestion -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.MouseOperations@436a4e4b]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-15T04:56:12Z" finished-at="2020-09-15T04:56:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- switchings.FileUpload -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.MouseOperations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
