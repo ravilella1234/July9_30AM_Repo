@@ -6,7 +6,7 @@
       <class name="com.project.September9AMProject.SuiteA.LoginTest">
         <methods>
           <include name="init"/>
-          <include name="f" invocation-numbers="1 2"/>
+          <include name="f" invocation-numbers="0 1 2"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.project.September9AMProject.SuiteA.LoginTest -->

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" ignored="0" total="3" passed="1">
+<testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1924" started-at="2020-10-07T04:43:53Z" finished-at="2020-10-07T04:43:55Z">
+  <suite name="Default suite" duration-ms="2015" started-at="2020-10-08T05:18:53Z" finished-at="2020-10-08T05:18:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1924" started-at="2020-10-07T04:43:53Z" finished-at="2020-10-07T04:43:55Z">
+    <test name="Default test" duration-ms="2015" started-at="2020-10-08T05:18:53Z" finished-at="2020-10-08T05:18:55Z">
       <class name="com.project.September9AMProject.SuiteA.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.project.September9AMProject.SuiteA.LoginTest@b62fe6d]" name="init" is-config="true" duration-ms="1760" started-at="2020-10-07T04:43:53Z" finished-at="2020-10-07T04:43:55Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.project.September9AMProject.SuiteA.LoginTest@b62fe6d]" name="init" is-config="true" duration-ms="1863" started-at="2020-10-08T05:18:53Z" finished-at="2020-10-08T05:18:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.September9AMProject.SuiteA.LoginTest@b62fe6d]" name="f" duration-ms="33" started-at="2020-10-07T04:43:55Z" data-provider="getData" finished-at="2020-10-07T04:43:55Z">
+        <test-method status="FAIL" signature="f(java.util.Hashtable)[pri:0, instance:com.project.September9AMProject.SuiteA.LoginTest@b62fe6d]" name="f" duration-ms="21" started-at="2020-10-08T05:18:55Z" data-provider="getData" finished-at="2020-10-08T05:18:55Z">
           <params>
             <param index="0">
               <value>
@@ -19,10 +19,44 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.project.September9AMProject.BaseClass.GenericKeywords.navigate(GenericKeywords.java:49)
+at com.project.September9AMProject.BaseClass.DriverScript.executeKeywords(DriverScript.java:58)
+at com.project.September9AMProject.SuiteA.LoginTest.f(LoginTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.September9AMProject.SuiteA.LoginTest@b62fe6d]" name="f" duration-ms="9" started-at="2020-10-07T04:43:55Z" data-provider="getData" finished-at="2020-10-07T04:43:55Z">
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.September9AMProject.SuiteA.LoginTest@b62fe6d]" name="f" duration-ms="6" started-at="2020-10-08T05:18:55Z" data-provider="getData" finished-at="2020-10-08T05:18:55Z">
           <params>
             <param index="0">
               <value>
@@ -68,7 +102,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.September9AMProject.SuiteA.LoginTest@b62fe6d]" name="f" duration-ms="7" started-at="2020-10-07T04:43:55Z" data-provider="getData" finished-at="2020-10-07T04:43:55Z">
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.September9AMProject.SuiteA.LoginTest@b62fe6d]" name="f" duration-ms="6" started-at="2020-10-08T05:18:55Z" data-provider="getData" finished-at="2020-10-08T05:18:55Z">
           <params>
             <param index="0">
               <value>
@@ -114,7 +148,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.September9AMProject.SuiteA.LoginTest@b62fe6d]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-10-07T04:43:55Z" finished-at="2020-10-07T04:43:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.September9AMProject.SuiteA.LoginTest@b62fe6d]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-10-08T05:18:55Z" finished-at="2020-10-08T05:18:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
